@@ -1,0 +1,124 @@
+<html>
+<head>
+<title> WEB-115 Final Project </title>
+</head>
+
+<body style="border-color:#F89A26; border-style: solid; border-width:3px;">
+    <div style="background-color:#F89A26; 
+    height: 175px; 
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    margin-bottom: 50px;">
+        <img src="BuildYourMealPlan.jpeg" style="height: 175px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;">
+    </div>
+
+<form id = "myForm" style="margin-left:125px">
+    <p>Enter your name:</p>
+    <input type = "text" id = "name">
+    <p>Enter your email:</p>
+    <input type = "text" id = "email" required>
+    <p>Enter your goal for the week:</p>
+    <input type = "text" id = "goal">
+    <br><br>
+    <input type = "button" id = "weeklyMeal" value = "Enter Weekly Meals">
+    <br><br>
+</form>
+
+
+<form id="mealEntry" style="display: none; margin-left:115px;">
+    <div style="background-color: #0c68b35f; margin-right:125px; padding:10px;">
+        <p style="font-weight: bold;">Monday</p>
+        Breakfast: <input type = "text" id = "mb" style="margin-right: 15px;"> 
+        AM Snack: <input type = "text" id = "mas" style="margin-right: 15px;">
+        Lunch: <input type = "text" id = "ml" style="margin-right: 15px;">
+        PM Snack: <input type = "text" id = "mps" style="margin-right: 15px;">
+        Dinner: <input type = "text" id = "md" style="margin-right: 15px;">
+        <br> <br>
+    </div>
+
+    <div style="margin-right:125px; padding:10px;">
+        <p style="font-weight: bold;">Tuesday</p>
+        Breakfast: <input type = "text" id = "tb" style="margin-right: 15px;"> 
+        AM Snack: <input type = "text" id = "tas" style="margin-right: 15px;">
+        Lunch: <input type = "text" id = "tl" style="margin-right: 15px;">
+        PM Snack: <input type = "text" id = "tps" style="margin-right: 15px;">
+        Dinner: <input type = "text" id = "td" style="margin-right: 15px;">
+        <br><br>
+    </div>
+
+    <div style="background-color: #0c68b35f; margin-right:125px; padding:10px;">
+        <p style="font-weight: bold;">Wednesday</p>
+        Breakfast: <input type = "text" id = "wb" style="margin-right: 15px;"> 
+        AM Snack: <input type = "text" id = "was" style="margin-right: 15px;">
+        Lunch: <input type = "text" id = "wl" style="margin-right: 15px;">
+        PM Snack: <input type = "text" id = "wps" style="margin-right: 15px;">
+        Dinner: <input type = "text" id = "wd" style="margin-right: 15px;">
+        <br><br>
+    </div>
+
+    <div style="margin-right:125px; padding:10px;">
+        <p style="font-weight: bold;">Thursday</p>
+        Breakfast: <input type = "text" id = "thb" style="margin-right: 15px;"> 
+        AM Snack: <input type = "text" id = "thas" style="margin-right: 15px;">
+        Lunch: <input type = "text" id = "thl" style="margin-right: 15px;">
+        PM Snack: <input type = "text" id = "thps" style="margin-right: 15px;">
+        Dinner: <input type = "text" id = "thd" style="margin-right: 15px;">
+        <br><br>
+    </div>
+
+    <div style="background-color: #0c68b35f; margin-right:125px; padding:10px;">
+        <p style="font-weight: bold;">Friday</p>
+        Breakfast: <input type = "text" id = "fb" style="margin-right: 15px;"> 
+        AM Snack: <input type = "text" id = "fas" style="margin-right: 15px;">
+        Lunch: <input type = "text" id = "fl" style="margin-right: 15px;">
+        PM Snack: <input type = "text" id = "fps" style="margin-right: 15px;">
+        Dinner: <input type = "text" id = "fd" style="margin-right: 15px;">
+        <br><br>
+    </div>
+
+    <div style="margin-right:125px; padding:10px;">
+        <p style="font-weight: bold;">Saturday</p>
+        Breakfast: <input type = "text" id = "sb" style="margin-right: 15px;"> 
+        AM Snack: <input type = "text" id = "sas" style="margin-right: 15px;">
+        Lunch: <input type = "text" id = "sl" style="margin-right: 15px;">
+        PM Snack: <input type = "text" id = "sps" style="margin-right: 15px;">
+        Dinner: <input type = "text" id = "sd" style="margin-right: 15px;">
+        <br><br>
+    </div>
+
+    <div style="background-color: #0c68b35f; margin-right:125px; padding:10px;">
+        <p style="font-weight: bold;">Sunday</p>
+        Breakfast: <input type = "text" id = "sub" style="margin-right: 15px;"> 
+        AM Snack: <input type = "text" id = "suas" style="margin-right: 15px;">
+        Lunch: <input type = "text" id = "sul" style="margin-right: 15px;">
+        PM Snack: <input type = "text" id = "sups" style="margin-right: 15px;">
+        Dinner: <input type = "text" id = "sud" style="margin-right: 15px;">
+    </div>
+
+    <br><br>
+    <div style="padding-top: 25px; padding-bottom:50px;">
+        <input type = "button" id = "weeklyPlanner" value = "Create Weekly Planner">
+        <input type = "button" id = "clear" value = "Start Over">
+    </div>
+
+</form>
+
+<!-- <script>
+    document.getElementById("myButton").addEventListener('click',myWindow)
+    function myWindow()
+    {
+        visitorName = document.getElementById("myInput").value;
+        myText = ("<html>\n<head>\n<title>Welcome</title>\n</head>\n<body>\n");
+        myText += ("Hello " + visitorName + ", this page was created on-the-fly!");
+        myText += ("</body>\n</html>");
+    
+        flyWindow = window.open('about:blank','myPop','width=400,height=200,left=200,top=200');
+        flyWindow.document.write(myText);
+    }
+    </script> -->
+    <script src="projectJS.js"></script>
+</body>
+</html>
